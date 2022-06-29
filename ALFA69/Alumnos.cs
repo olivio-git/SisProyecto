@@ -123,5 +123,10 @@ namespace WindowsFormsAppVaidrollTeam
             dt = objneg.N_buscaralumnos(objent);
             dataGridView1.DataSource = dt;
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

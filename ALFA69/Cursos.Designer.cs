@@ -43,7 +43,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnsalir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -59,7 +58,7 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(26, 65);
+            this.groupBox1.Location = new System.Drawing.Point(218, 95);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(425, 104);
             this.groupBox1.TabIndex = 21;
@@ -76,6 +75,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.DarkGray;
             this.label5.Location = new System.Drawing.Point(29, 65);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 20);
@@ -93,6 +93,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.DarkGray;
             this.label1.Location = new System.Drawing.Point(35, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 20);
@@ -104,9 +105,9 @@
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(26, 175);
+            this.groupBox2.Location = new System.Drawing.Point(164, 223);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(425, 213);
+            this.groupBox2.Size = new System.Drawing.Size(555, 203);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             // 
@@ -124,7 +125,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(419, 188);
+            this.dataGridView1.Size = new System.Drawing.Size(549, 178);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -187,32 +188,17 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.Location = new System.Drawing.Point(5, 30);
+            this.panel1.Location = new System.Drawing.Point(197, 60);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(460, 29);
             this.panel1.TabIndex = 24;
-            // 
-            // btnsalir
-            // 
-            this.btnsalir.BackColor = System.Drawing.Color.Maroon;
-            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalir.ForeColor = System.Drawing.Color.White;
-            this.btnsalir.Location = new System.Drawing.Point(445, 7);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(20, 20);
-            this.btnsalir.TabIndex = 15;
-            this.btnsalir.Text = "X";
-            this.btnsalir.UseVisualStyleBackColor = false;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // Cursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsFormsAppVaidrollTeam.Properties.Resources.cursos;
-            this.ClientSize = new System.Drawing.Size(470, 400);
-            this.Controls.Add(this.btnsalir);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.ClientSize = new System.Drawing.Size(881, 601);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -250,7 +236,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }

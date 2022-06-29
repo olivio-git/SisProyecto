@@ -28,63 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnentrar = new System.Windows.Forms.Button();
-            this.cbo1 = new System.Windows.Forms.ComboBox();
-            this.cbo2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbo2 = new System.Windows.Forms.ComboBox();
+            this.cbo1 = new System.Windows.Forms.ComboBox();
+            this.btnentrar = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salon_nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_cursos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_salon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnsalir = new System.Windows.Forms.Button();
+            this.id_cursos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salon_nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // label1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.btnentrar);
-            this.groupBox1.Controls.Add(this.cbo1);
-            this.groupBox1.Controls.Add(this.cbo2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(25, 39);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(745, 76);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            // 
-            // btnentrar
-            // 
-            this.btnentrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnentrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnentrar.Location = new System.Drawing.Point(639, 17);
-            this.btnentrar.Name = "btnentrar";
-            this.btnentrar.Size = new System.Drawing.Size(100, 37);
-            this.btnentrar.TabIndex = 8;
-            this.btnentrar.Text = "Generar";
-            this.btnentrar.UseVisualStyleBackColor = true;
-            this.btnentrar.Click += new System.EventHandler(this.btnentrar_Click);
-            // 
-            // cbo1
-            // 
-            this.cbo1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbo1.FormattingEnabled = true;
-            this.cbo1.Location = new System.Drawing.Point(92, 22);
-            this.cbo1.Name = "cbo1";
-            this.cbo1.Size = new System.Drawing.Size(255, 28);
-            this.cbo1.TabIndex = 7;
-            this.cbo1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Opción:";
             // 
             // cbo2
             // 
@@ -98,25 +69,42 @@
             this.cbo2.SelectedIndexChanged += new System.EventHandler(this.cbotipo_SelectedIndexChanged);
             this.cbo2.SelectedValueChanged += new System.EventHandler(this.cbo2_SelectedValueChanged);
             // 
-            // label1
+            // cbo1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Opción:";
+            this.cbo1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo1.FormattingEnabled = true;
+            this.cbo1.Location = new System.Drawing.Point(92, 22);
+            this.cbo1.Name = "cbo1";
+            this.cbo1.Size = new System.Drawing.Size(255, 28);
+            this.cbo1.TabIndex = 7;
+            this.cbo1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // groupBox2
+            // btnentrar
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(25, 131);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(745, 459);
-            this.groupBox2.TabIndex = 13;
-            this.groupBox2.TabStop = false;
+            this.btnentrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnentrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnentrar.Location = new System.Drawing.Point(639, 17);
+            this.btnentrar.Name = "btnentrar";
+            this.btnentrar.Size = new System.Drawing.Size(100, 37);
+            this.btnentrar.TabIndex = 8;
+            this.btnentrar.Text = "Generar";
+            this.btnentrar.UseVisualStyleBackColor = true;
+            this.btnentrar.Click += new System.EventHandler(this.btnentrar_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.btnentrar);
+            this.groupBox1.Controls.Add(this.cbo1);
+            this.groupBox1.Controls.Add(this.cbo2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(76, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(745, 76);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
             // 
             // dataGridView1
             // 
@@ -138,65 +126,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(739, 434);
+            this.dataGridView1.Size = new System.Drawing.Size(705, 428);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "id_alumno";
-            this.Column1.HeaderText = "Código";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 84;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "nombre";
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 90;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "telefono";
-            this.Column3.HeaderText = "Teléfono";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 96;
-            // 
-            // Matricula
-            // 
-            this.Matricula.DataPropertyName = "matricula";
-            this.Matricula.HeaderText = "Matricula";
-            this.Matricula.Name = "Matricula";
-            this.Matricula.ReadOnly = true;
-            this.Matricula.Width = 98;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "curso_nombre";
-            this.Column4.HeaderText = "Curso";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 76;
-            // 
-            // salon_nombre
-            // 
-            this.salon_nombre.DataPropertyName = "salon_nombre";
-            this.salon_nombre.HeaderText = "Salon";
-            this.salon_nombre.Name = "salon_nombre";
-            this.salon_nombre.ReadOnly = true;
-            this.salon_nombre.Width = 75;
-            // 
-            // id_cursos
-            // 
-            this.id_cursos.DataPropertyName = "id_cursos";
-            this.id_cursos.HeaderText = "id_cursos";
-            this.id_cursos.Name = "id_cursos";
-            this.id_cursos.ReadOnly = true;
-            this.id_cursos.Visible = false;
-            this.id_cursos.Width = 102;
             // 
             // id_salon
             // 
@@ -207,27 +138,80 @@
             this.id_salon.Visible = false;
             this.id_salon.Width = 93;
             // 
-            // btnsalir
+            // id_cursos
             // 
-            this.btnsalir.BackColor = System.Drawing.Color.Maroon;
-            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalir.ForeColor = System.Drawing.Color.White;
-            this.btnsalir.Location = new System.Drawing.Point(782, 7);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(20, 20);
-            this.btnsalir.TabIndex = 14;
-            this.btnsalir.Text = "X";
-            this.btnsalir.UseVisualStyleBackColor = false;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            this.id_cursos.DataPropertyName = "id_cursos";
+            this.id_cursos.HeaderText = "id_cursos";
+            this.id_cursos.Name = "id_cursos";
+            this.id_cursos.ReadOnly = true;
+            this.id_cursos.Visible = false;
+            this.id_cursos.Width = 102;
+            // 
+            // salon_nombre
+            // 
+            this.salon_nombre.DataPropertyName = "salon_nombre";
+            this.salon_nombre.HeaderText = "Salon";
+            this.salon_nombre.Name = "salon_nombre";
+            this.salon_nombre.ReadOnly = true;
+            this.salon_nombre.Width = 75;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "curso_nombre";
+            this.Column4.HeaderText = "Curso";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 76;
+            // 
+            // Matricula
+            // 
+            this.Matricula.DataPropertyName = "matricula";
+            this.Matricula.HeaderText = "Matricula";
+            this.Matricula.Name = "Matricula";
+            this.Matricula.ReadOnly = true;
+            this.Matricula.Width = 98;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "telefono";
+            this.Column3.HeaderText = "Teléfono";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 96;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "nombre";
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 90;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "id_alumno";
+            this.Column1.HeaderText = "Código";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 84;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(89, 106);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(711, 453);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
             // 
             // Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsFormsAppVaidrollTeam.Properties.Resources.reportes;
-            this.ClientSize = new System.Drawing.Size(814, 624);
-            this.Controls.Add(this.btnsalir);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.ClientSize = new System.Drawing.Size(881, 601);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
@@ -238,20 +222,19 @@
             this.Load += new System.EventHandler(this.Reportes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cbo1;
-        private System.Windows.Forms.ComboBox cbo2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbo2;
+        private System.Windows.Forms.ComboBox cbo1;
         private System.Windows.Forms.Button btnentrar;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -261,6 +244,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn salon_nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_cursos;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_salon;
-        private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

@@ -43,7 +43,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnsalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -54,7 +53,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.Location = new System.Drawing.Point(5, 30);
+            this.panel1.Location = new System.Drawing.Point(226, 76);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(460, 29);
             this.panel1.TabIndex = 27;
@@ -105,7 +104,7 @@
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(26, 176);
+            this.groupBox2.Location = new System.Drawing.Point(247, 222);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(425, 213);
             this.groupBox2.TabIndex = 26;
@@ -152,7 +151,7 @@
             this.groupBox1.Controls.Add(this.txtcodigo);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(29, 65);
+            this.groupBox1.Location = new System.Drawing.Point(250, 111);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(425, 105);
             this.groupBox1.TabIndex = 25;
@@ -192,27 +191,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Código:";
             // 
-            // btnsalir
-            // 
-            this.btnsalir.BackColor = System.Drawing.Color.Maroon;
-            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalir.ForeColor = System.Drawing.Color.White;
-            this.btnsalir.Location = new System.Drawing.Point(440, 6);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(20, 20);
-            this.btnsalir.TabIndex = 28;
-            this.btnsalir.Text = "X";
-            this.btnsalir.UseVisualStyleBackColor = false;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
-            // 
             // Salones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsFormsAppVaidrollTeam.Properties.Resources.salones;
-            this.ClientSize = new System.Drawing.Size(470, 400);
-            this.Controls.Add(this.btnsalir);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.ClientSize = new System.Drawing.Size(881, 601);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -248,7 +232,6 @@
         private System.Windows.Forms.TextBox txtcodigo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }

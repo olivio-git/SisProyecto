@@ -140,7 +140,7 @@ namespace WindowsFormsAppVaidrollTeam
             }
         }
 
-            private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
             lblfecha.Text = DateTime.Now.ToString("dd-MM-yyyy");
             lblhora.Text = DateTime.Now.ToString("hh:mm:ss tt");
@@ -153,21 +153,24 @@ namespace WindowsFormsAppVaidrollTeam
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Usuarios frmusu = new Usuarios();
-            frmusu.ShowDialog();
+            abrirFormHijo(new Usuarios());
+            /*Usuarios frmusu = new Usuarios();
+            frmusu.ShowDialog();*/
         }
 
         private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            Alumnos frmalu = new Alumnos();
-            frmalu.ShowDialog();
+            abrirFormHijo(new Alumnos());
+
+           /* Alumnos frmalu = new Alumnos();
+            frmalu.ShowDialog();*/
         }
 
         private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Cursos frmcur = new Cursos();
-            frmcur.ShowDialog();
+            abrirFormHijo(new Cursos());
+           /* Cursos frmcur = new Cursos();
+            frmcur.ShowDialog();*/
         }
 
         private void btnrefresh_Click(object sender, EventArgs e)
@@ -184,8 +187,9 @@ namespace WindowsFormsAppVaidrollTeam
 
         private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Reportes frmreport = new Reportes();
-            frmreport.ShowDialog();
+            abrirFormHijo(new Reportes());  
+            /*Reportes frmreport = new Reportes();
+            frmreport.ShowDialog();*/
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -195,14 +199,21 @@ namespace WindowsFormsAppVaidrollTeam
 
         private void salonesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Salones frmsalones = new Salones();
-            frmsalones.ShowDialog();
+            abrirFormHijo(new Salones());
+            /*Salones frmsalones = new Salones();
+            frmsalones.ShowDialog();*/
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            PassCambiar frmpass = new PassCambiar();
-            frmpass.ShowDialog();
+            abrirFormHijo(new PassCambiar());
+            /*PassCambiar frmpass = new PassCambiar();
+            frmpass.ShowDialog();*/
         }
 
         private void boxmovform_MouseMove(object sender, MouseEventArgs e)
@@ -217,6 +228,18 @@ namespace WindowsFormsAppVaidrollTeam
         private void boxmovform_MouseUp(object sender, MouseEventArgs e)
         {
             mov = 0;
+        }
+
+        private void abrirFormHijo(object formhijo)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+            Form fh = formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
         }
     }
 }

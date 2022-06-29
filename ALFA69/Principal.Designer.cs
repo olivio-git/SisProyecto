@@ -36,7 +36,6 @@
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblfecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblusuario = new System.Windows.Forms.Label();
@@ -51,27 +50,23 @@
             this.panelprincipal = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnrefresh = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnrefresh = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.lbltotalcurs = new System.Windows.Forms.Label();
             this.lbltotalsalon = new System.Windows.Forms.Label();
             this.lbltotalalum = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panelprincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -84,7 +79,7 @@
             this.lblhora,
             this.toolStripStatusLabel3,
             this.lblfecha});
-            this.statusStrip1.Location = new System.Drawing.Point(450, 0);
+            this.statusStrip1.Location = new System.Drawing.Point(1068, 624);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(245, 26);
             this.statusStrip1.SizingGrip = false;
@@ -125,15 +120,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.statusStrip1);
-            this.panel1.Location = new System.Drawing.Point(5, 569);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(790, 26);
-            this.panel1.TabIndex = 16;
             // 
             // panel2
             // 
@@ -286,31 +272,16 @@
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
-            // btnrefresh
-            // 
-            this.btnrefresh.BackColor = System.Drawing.Color.Gray;
-            this.btnrefresh.FlatAppearance.BorderSize = 0;
-            this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnrefresh.ForeColor = System.Drawing.Color.DimGray;
-            this.btnrefresh.Location = new System.Drawing.Point(53, 225);
-            this.btnrefresh.Name = "btnrefresh";
-            this.btnrefresh.Size = new System.Drawing.Size(100, 37);
-            this.btnrefresh.TabIndex = 12;
-            this.btnrefresh.Text = "Actualizar";
-            this.btnrefresh.UseVisualStyleBackColor = false;
-            this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
-            // 
             // linkLabel1
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.SlateGray;
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DimGray;
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Gray;
-            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.SlateGray;
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.DimGray;
             this.linkLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.ForeColor = System.Drawing.Color.Black;
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.LinkColor = System.Drawing.Color.DimGray;
             this.linkLabel1.Location = new System.Drawing.Point(270, 32);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(149, 17);
@@ -320,98 +291,14 @@
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Blue;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // lbltotalcurs
+            // panelContenedor
             // 
-            this.lbltotalcurs.AutoSize = true;
-            this.lbltotalcurs.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalcurs.ForeColor = System.Drawing.Color.White;
-            this.lbltotalcurs.Location = new System.Drawing.Point(249, 169);
-            this.lbltotalcurs.Name = "lbltotalcurs";
-            this.lbltotalcurs.Size = new System.Drawing.Size(49, 40);
-            this.lbltotalcurs.TabIndex = 7;
-            this.lbltotalcurs.Text = "00";
-            // 
-            // lbltotalsalon
-            // 
-            this.lbltotalsalon.AutoSize = true;
-            this.lbltotalsalon.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalsalon.ForeColor = System.Drawing.Color.White;
-            this.lbltotalsalon.Location = new System.Drawing.Point(240, 90);
-            this.lbltotalsalon.Name = "lbltotalsalon";
-            this.lbltotalsalon.Size = new System.Drawing.Size(49, 40);
-            this.lbltotalsalon.TabIndex = 6;
-            this.lbltotalsalon.Text = "00";
-            // 
-            // lbltotalalum
-            // 
-            this.lbltotalalum.AutoSize = true;
-            this.lbltotalalum.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalalum.ForeColor = System.Drawing.Color.White;
-            this.lbltotalalum.Location = new System.Drawing.Point(240, 29);
-            this.lbltotalalum.Name = "lbltotalalum";
-            this.lbltotalalum.Size = new System.Drawing.Size(49, 40);
-            this.lbltotalalum.TabIndex = 5;
-            this.lbltotalalum.Text = "00";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(46, 169);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(258, 40);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Cursos registrados:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(30, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(270, 40);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Salones registrados:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(23, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(285, 40);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Alumnos registrados:";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.btnrefresh);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.lbltotalalum);
-            this.panel3.Controls.Add(this.lbltotalsalon);
-            this.panel3.Controls.Add(this.lbltotalcurs);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(419, 49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(881, 601);
-            this.panel3.TabIndex = 19;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::WindowsFormsAppVaidrollTeam.Properties.Resources.libros;
-            this.pictureBox1.Location = new System.Drawing.Point(356, 248);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(419, 49);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(881, 601);
+            this.panelContenedor.TabIndex = 19;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // label1
             // 
@@ -425,16 +312,104 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "USUARIO:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(1134, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(127, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Salones registrados:";
+            // 
+            // btnrefresh
+            // 
+            this.btnrefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnrefresh.FlatAppearance.BorderSize = 0;
+            this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrefresh.ForeColor = System.Drawing.Color.DimGray;
+            this.btnrefresh.Location = new System.Drawing.Point(1188, 114);
+            this.btnrefresh.Name = "btnrefresh";
+            this.btnrefresh.Size = new System.Drawing.Size(100, 37);
+            this.btnrefresh.TabIndex = 12;
+            this.btnrefresh.Text = "Actualizar";
+            this.btnrefresh.UseVisualStyleBackColor = false;
+            this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(1139, 94);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(122, 17);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Cursos registrados:";
+            // 
+            // lbltotalcurs
+            // 
+            this.lbltotalcurs.AutoSize = true;
+            this.lbltotalcurs.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotalcurs.ForeColor = System.Drawing.Color.White;
+            this.lbltotalcurs.Location = new System.Drawing.Point(1267, 94);
+            this.lbltotalcurs.Name = "lbltotalcurs";
+            this.lbltotalcurs.Size = new System.Drawing.Size(22, 17);
+            this.lbltotalcurs.TabIndex = 7;
+            this.lbltotalcurs.Text = "00";
+            // 
+            // lbltotalsalon
+            // 
+            this.lbltotalsalon.AutoSize = true;
+            this.lbltotalsalon.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotalsalon.ForeColor = System.Drawing.Color.White;
+            this.lbltotalsalon.Location = new System.Drawing.Point(1267, 74);
+            this.lbltotalsalon.Name = "lbltotalsalon";
+            this.lbltotalsalon.Size = new System.Drawing.Size(22, 17);
+            this.lbltotalsalon.TabIndex = 6;
+            this.lbltotalsalon.Text = "00";
+            // 
+            // lbltotalalum
+            // 
+            this.lbltotalalum.AutoSize = true;
+            this.lbltotalalum.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotalalum.ForeColor = System.Drawing.Color.White;
+            this.lbltotalalum.Location = new System.Drawing.Point(1267, 57);
+            this.lbltotalalum.Name = "lbltotalalum";
+            this.lbltotalalum.Size = new System.Drawing.Size(22, 17);
+            this.lbltotalalum.TabIndex = 5;
+            this.lbltotalalum.Text = "00";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(1129, 57);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(132, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Alumnos registrados:";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1300, 650);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelContenedor);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panelprincipal);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbltotalalum);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lbltotalsalon);
+            this.Controls.Add(this.lbltotalcurs);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnrefresh);
+            this.Controls.Add(this.statusStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -442,8 +417,6 @@
             this.Load += new System.EventHandler(this.Principal_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -452,10 +425,8 @@
             this.panelprincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -466,7 +437,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripStatusLabel lblfecha;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblusuario;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -477,20 +447,19 @@
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.Panel panelprincipal;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnrefresh;
+        private System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label lbltotalcurs;
         public System.Windows.Forms.Label lbltotalsalon;
         public System.Windows.Forms.Label lbltotalalum;
-        private System.Windows.Forms.Button btnrefresh;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }
