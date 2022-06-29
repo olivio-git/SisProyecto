@@ -188,6 +188,11 @@ namespace WindowsFormsAppVaidrollTeam
             frmreport.ShowDialog();
         }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void salonesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Salones frmsalones = new Salones();
